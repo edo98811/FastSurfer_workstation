@@ -5,7 +5,7 @@ for file in /media/neuropsycad/disk12t/EdoardoFilippiMasterThesis/implementation
 do
   echo "$file"
   basename=${file##*/}
-  filename=$( $basename | cut -b -7 )
+  filename=$( "$basename" | cut -b -7 )
   echo "$basename"
   echo "$filename"
 #   sudo docker run --gpus all -v /media/neuropsycad/disk12t/EdoardoFilippiMasterThesis/implementations/unetsv3/dataset:/data \

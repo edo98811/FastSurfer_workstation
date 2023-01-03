@@ -5,9 +5,9 @@ for file in /media/neuropsycad/disk12t/EdoardoFilippiMasterThesis/implementation
 do
   echo "$file"
   basename=${file##*/}
-  filename=(cut -b -7 $basename)
-  echo $basename
-  echo $filename
+  filename=(cut -b -7 "$basename")
+  echo "$basename"
+  echo "$filename"
 #   sudo docker run --gpus all -v /media/neuropsycad/disk12t/EdoardoFilippiMasterThesis/implementations/unetsv3/dataset:/data \
 #		              -v /media/neuropsycad/disk12t/EdoardoFilippiMasterThesis/implementations/fastsurfer_output:/output \
 #		              -v /media/neuropsycad/disk12t/HelenaPereira/freesurfer:/fs_license \

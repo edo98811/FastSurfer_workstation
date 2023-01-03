@@ -15,6 +15,6 @@ do
  		              --rm --user 1000 deepmi/fastsurfer:gpu-v1.1.1 \
  		              --fs_license /fs_license/license.txt \
  		              --t1 /data/"$basename" \
- 		              --sid sub-"$filename" --sd /output \
+ 		              --sid "$filename" --sd /output \
  		              --parallel
 done
